@@ -3,3 +3,7 @@
 
 # Pelican
 output
+*.pid
+
+# OS X
+.DS_Store

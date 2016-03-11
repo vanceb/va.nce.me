@@ -7,7 +7,7 @@ Summary: The design, development and creation of a neopixel clock using the lase
 
 I joined the [Reading Hackspace](http://rlab.org.uk/) shortly before Christmas and wanted a project that would expose me to some of the tools and expertise I now had access to.  Some of the projects that drew my eye were those using [Neopixels](https://www.adafruit.com/category/168), and one or two people were doing projects using the [ESP8266](https://en.wikipedia.org/wiki/ESP8266).  I had done some Arduino prototyping before, mainly on breadboard or stripboard, so I wanted to use that knowledge and expand it.  I was encouraged to try and create my first PCB as part of the project.
 
-I came up with the idea of creating a neopixel clock, where each neopixel shone into some frosted acrylic, red signifies hours, blue minutes and green seconds. The colours are mixed as they overlap creating a bit of art as well as being able to display the time.    The use of acrylic would expose me to some 2D CAD and laser cutting.
+I came up with the idea of creating a neopixel clock, where each neopixel shone into some frosted acrylic, red signifies hours, blue minutes and green seconds. The colours are mixed as they overlap creating a bit of art as well as being able to display the time.  If you want to see it in action take a look at the [video](https://youtu.be/3ScniT1N5sI).  The use of acrylic would expose me to some 2D CAD and laser cutting.
 
 Before I get into detail, all of the files relating to this project, including the CAD designs, the PCB and schematic, and the code are all hosted on [Github](https://github.com/vanceb/NightClock) if you want to take a look.
 

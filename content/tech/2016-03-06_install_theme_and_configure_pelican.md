@@ -16,4 +16,4 @@ git submodule add git@github.com:vanceb/pure-single themes/pure-single
 
 ## Configuring Pelican and the themes
 
-The Pelican config file `pelicanconf.py` allows you to configure pelican for your site including [basics](http://docs.getpelican.com/en/3.6.3/settings.html) that the core Pelican uses as well as some variables that the theme can use.  You can check out my [`pelicanconf.py`](https://github.com/vanceb/va.nce.me/config/blob/master.pelicanconf.py) file in github.
+The Pelican config file `pelicanconf.py` allows you to configure pelican for your site including [basics](http://docs.getpelican.com/en/3.6.3/settings.html) that the core Pelican uses as well as some variables that the theme can use.  You can check out my [`pelicanconf.py`](https://github.com/vanceb/va.nce.me/blob/master/pelicanconf.py) file in github.

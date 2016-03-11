@@ -53,3 +53,11 @@ DISPLAY_PAGES_ON_MENU = True
 SOCIAL = (('twitter', 'https://twitter.com/geospaced'),
           ('github', "https://github.com/vanceb")
           )
+
+# Photos plugin
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['photos']
+PHOTO_LIBRARY = "~/sites/photos"
+PHOTO_GALLERY = (1024, 768, 80)
+PHOTO_ARTICLE = (760,506, 80)
+PHOTO_THUMB = (192,144,60)

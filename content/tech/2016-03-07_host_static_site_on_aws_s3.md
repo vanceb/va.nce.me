@@ -89,3 +89,5 @@ TXT Records:
 ```
 
 Once these entries were configured in Route 53 I can change the Nameservers entry against the domain in the LCN settings to point to the Route 53 Name servers we identified above when setting up the hosted zone.
+
+As you are now reading this on [http://va.nce.me](http://va.nce.me) it must have been successful :-)

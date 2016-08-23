@@ -3,7 +3,7 @@ Modified: 2016-08-20 15:00
 Tags: linux, Raspberry Pi
 Summary: Summary of setting up Arch Linux or Raspberry Pi B+ in preparation for the Landy Hi-fi
 
-# Introduction
+## Introduction
 
 I am building a hi-fi for the Land Rover using a Raspberry Pi as an MP3 player and interface server.  It also contains a DAB radio development board and a self-designed board to act as a pre-amp for source selection and volume as well as controlling the power to the Pi.
 

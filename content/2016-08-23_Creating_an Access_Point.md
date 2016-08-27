@@ -15,7 +15,7 @@ Name=wlan0
 Address=192.168.90.1/24
 ~~~
 
-Restart the systemd-networkd.service
+Restart the `systemd-networkd.service`
 
 ~~~ shell
 systemctl restart systemd-networkd
@@ -58,6 +58,25 @@ systemctl enable hostapd
 ## Configure dhcp on the interface
 
 Set up dhcpd following the [Arch Linux dhcp guide](https://wiki.archlinux.org/index.php/Dhcpd).  Note that I only want this to be enabled on wlan0 and not other interfaces, so I followed the specifics of [Listening on only one interface](https://wiki.archlinux.org/index.php/Dhcpd#Listening_on_only_one_interface)
+
+So create a new unit definition file for the service in `/etc/systemd/system/dhcpd4@.service` The contents of this file differ from the example as I want the wlan0 interface to be up before dhcpd4 starts
+
+~~~ shell
+[Unit]
+Description=IPv4 DHCP server on %I
+Wants=network.target
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/dhcpd4.pid
+ExecStart=/usr/bin/dhcpd -4 -q -pf /run/dhcpd4.pid %I
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
+~~~
+
 
 Edit the config file `/etc/dhcpd.conf`
 

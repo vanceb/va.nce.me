@@ -18,6 +18,7 @@ Following the guide on [Digital Ocean](https://www.digitalocean.com/community/tu
 Decided to try a new [Docker Unify container](https://hub.docker.com/r/linuxserver/unifi/)
 
 ~~~ Shell
+
 sudo docker pull linuxserver/unifi
 
 sudo mkdir -p /docker/unifi
@@ -34,33 +35,34 @@ sudo docker create \
 
  sudo docker run unifi
 
+~~~
+
 # firewall
 
 Centos uses firewalld as its firewall.  It is a little more complex than ufw, but again the [DigitalOcean Firewalld page](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7) is great.
- ~~~
 
- I changed the zone for the network interfaces, by adding:
+I changed the zone for the network interfaces, by adding:
 
- ~~~ Shell
+~~~ Shell
 
  ZONE=Home
 
- ~~~
+~~~
 
- To the main interface and a similar one to the second network interface configuration.  These files are located at:
+To the main interface and a similar one to the second network interface configuration.  These files are located at:
 
- ~~~ Shell
+~~~ Shell
 
- /etc/sysconfig/network-scripts/ifcfg-enp2s0f0
- /etc/sysconfig/network-scripts/ifcfg-enp2s0f1
+/etc/sysconfig/network-scripts/ifcfg-enp2s0f0
+/etc/sysconfig/network-scripts/ifcfg-enp2s0f1
 
- ~~~
+~~~
 
  I then had to [open the firewall](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-firewalld-on-centos-7), by defining a service to cover all of the ports needed for the Unifi controller, and saving it `/etc/firewalld/services/unifi.xml`.
 
- ~~~ xml
+~~~ xml
 
- <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <service>
   <short>Unifi</short>
   <description>Ports needed by the Unifi controller</description>

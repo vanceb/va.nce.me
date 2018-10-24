@@ -3,7 +3,7 @@ Modified: 2018-10-22 15:00
 Tags: mqtt, Kappelt gBridge, Google Home, sonoff, tasmota
 Summary: Voice control of existing Sonoff lights through Kappelt gBridge and mqtt
 
-# Voice control of Sonoff mqtt lights via mqtt
+# Voice control of Sonoff lights via mqtt
 
 ## Why not use the itead sonoff app?
 
@@ -53,7 +53,9 @@ I did not intend this to be a walk-through or howto.  Let's face it anyone attem
 * [Kappelt gBridge documentation](https://doc.gbridge.kappelt.net/html/index.html)
 * [mqtt_bablefish](https://github.com/vanceb/mqtt_babelfish)
 
-~~~ /etc/mosquitto/conf.d/60_bridge.conf
+## Mosquitto bridge config to connect to gBridge
+
+~~~ 
 # =================================================================
 # Bridges to Kappelt gBridge for Google Home Automation linkup
 # =================================================================

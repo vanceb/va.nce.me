@@ -1,5 +1,5 @@
 Title: Neopixel clock - my first project at Reading Hackspace
-image: {photo}espclock/esp_clock.jpg
+image: {filename}/images/espclock/esp_clock.jpg
 Tags: esp8266, kicad, pcb, lasercutter, cad, platformio
 Summary: The design, development and creation of a neopixel clock using the lasercutter at Reading Hackspace.  The electronics were prototyped then a PCB was designed in Kicad before being manufactured in China.  The ESP Arduino platform was used to brite the code and Platformio was used to manage, compile and upload the code to the ESP.  The code uses libraries to create a captive portal to set the wifi details and allow OTA programming.
 
@@ -17,7 +17,7 @@ The core of my design was to start with the Neopixels.  I had bought some [60 LE
 
 I initially used [LibreCAD](http://librecad.org/cms/home.html) to draw up the clock, but had some problems getting the design into the laser cutter (more on that later), so migrated to [QCAD](http://www.qcad.org/en/) for later revisions of the design.
 
-![Prototype ESP CLock with stripboard electronics]({photo}espclock/clock_cad.png)
+![Prototype ESP CLock with stripboard electronics]({filename}/images/espclock/clock_cad.jpg)
 
 The base of the clock was redesigned from the original to accommodate the PCB I later designed.  Although not shown it is in a separate CAD file in the project's [Github repository](https://github.com/vanceb/NightClock).
 
@@ -27,15 +27,15 @@ The electronics part of the project is the area I was most familiar with, having
 
 I bought a few ESP12E boards from a cheap Chinese supplier, and waited the 6 weeks for them to be delivered.  Once I had them I created my prototype using stripboard.  It can be seen in the image below driving the partially constructed clock.
 
-![Prototype of the clock and electronics, including ESP12E, light dependent resistor, and connections for the power and neopixels]({photo}espclock/clock_prototype.jpg)
+![Prototype of the clock and electronics, including ESP12E, light dependent resistor, and connections for the power and neopixels]({filename}/images/espclock/clock_prototype.jpg)
 
 Once proven, I started to create a schematic and PCB layout in [Kicad](http://kicad-pcb.org/).  The [Getting Started Tutorial](http://docs.kicad-pcb.org/en/getting_started_in_kicad.html) was a great introduction and I was able to design my PCB with minimal assistance from others in the Hackspace.  I did redesign the layout to keep the board dimensions below 50mm, as this was the cut off point for price changes on some of the Chinese PCB prototyping sites.  However in the end I used [PCBWay](http://www.pcbway.com/) on the advice of another Hackspace member, and I don't think it mattered there.  One great piece of advice I was given by a more experienced Hackspace member was to buy the components before sending the board away for manufacture.  Print out the board layout 1:1 and make sure the components you have bought fit the pads you allocated to each component.  Kicad lets you draw the schematic then before moving on to the board layout you need to assign a PCB footprint to each component.  This is the part I found hardest in the entire PCB process.  Finding the correct footprint for the component is a nightmare as I haven't found an easy way to search the footprints and if you don't know the name of the footprint you want you can be a bit stuck.  Thankfully most of the components I was using were surface mount and fairly standard sized, so once I had found one I could more easily identify the others.  The ESP8266 footprint and schematic was reused from [another Hackspace project](https://github.com/robot-army/ESP_WeatherStation)
 
 The final board layout is shown below, together with a photo of the boards I got back, and a populated board mounted in the clock base.  Note that I haven't entirely populated the board as I had already purchased a 3.3v wall-wart power supply, so I didn't need to voltage regulator.
 
-![board layout]({photo}espclock/esp_pcb_layout.png)
-![boards]({photo}espclock/esp_pcb.jpg)
-![populated board mounted in the clock]({photo}espclock/esp_pcb_populated.jpg)
+![board layout]({filename}/images/espclock/esp_pcb_layout.jpg)
+![boards]({filename}/images/espclock/esp_pcb.jpg)
+![populated board mounted in the clock]({filename}/images/espclock/esp_pcb_populated.jpg)
 
 ## Lasercutting
 

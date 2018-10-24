@@ -1,5 +1,5 @@
 Title: Micropython code for BBC Microbit TTN reporting
-Modified: 2016-06-02 15:00
+Modified: 2016-07-02 15:00
 Tags: python, BBC Microbit, IOT, LoRaWAN
 Summary: Code modified at the RLab TTN Workshop
 

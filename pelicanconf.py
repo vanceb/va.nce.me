@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+##!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -54,10 +54,10 @@ SOCIAL = (('twitter', 'https://twitter.com/geospaced'),
           ('github', "https://github.com/vanceb")
           )
 
-# Photos plugin
-PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['photos']
-PHOTO_LIBRARY = "~/sites/photos"
-PHOTO_GALLERY = (1024, 768, 80)
-PHOTO_ARTICLE = (760,506, 80)
-PHOTO_THUMB = (192,144,60)
+# Plugins
+PLUGIN_PATHS = ['./pelican-plugins']
+PLUGINS = ['pelican_fontawesome']
+#PHOTO_LIBRARY = "~/sites/photos"
+#PHOTO_GALLERY = (1024, 768, 80)
+#PHOTO_ARTICLE = (760,506, 80)
+#PHOTO_THUMB = (192,144,60)

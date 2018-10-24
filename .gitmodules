@@ -1,6 +1,6 @@
-[submodule "themes/pure-single"]
-	path = themes/pure-single
-	url = git@github.com:vanceb/pure-single
 [submodule "pure-single"]
 	path = pure-single
 	url = https://github.com/PurePelicanTheme/pure-single.git
+[submodule "themes/pure-single"]
+	path = themes/pure-single
+	url = git@github.com:vanceb/pure-single

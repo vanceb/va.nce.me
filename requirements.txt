@@ -1,0 +1,17 @@
+blinker==1.4
+docutils==0.14
+feedgenerator==1.9
+Jinja2==2.10
+Markdown==3.0.1
+MarkupSafe==1.0
+pelican==3.7.1
+pelican-fontawesome==0.1.0
+Pygments==2.2.0
+python-dateutil==2.7.3
+python-magic==0.4.15
+pytz==2018.5
+s3cmd==2.0.2
+six==1.11.0
+smartypants==2.0.1
+typogrify==2.0.7
+Unidecode==1.0.22
